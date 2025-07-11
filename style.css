@@ -1,0 +1,57 @@
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: rgb(231 232 233 / 98%);
+        color: rgb(5, 5, 39);     
+    }
+    .container{
+        width:70%;
+        margin: 0rem auto;
+        color: rgb(5, 5, 39); 
+
+    }
+  
+    /* nav bar CSS start */
+    .bg-color{
+        background-color: #ed8800!important;
+        box-shadow: 10px 10px 30px black;
+    }
+    .nav-section-top{
+        display: flex;
+        background-color:#ed8800;
+        justify-content: space-between;
+    }
+
+    .nav-child-s ul li{
+        
+        display: inline;
+        font-size: 25px;
+        justify-content:center;
+        margin: 16px;
+    }
+    .nav-ul{
+        margin-left: 20rem;
+        margin-top: 4rem;
+    }
+    /* nav bar CSS end */
+    marquee{
+        font-size: 35px;
+        background-color: #e18305;
+    }
+    .top-h1{
+        color: #e18305;
+        margin-top: 55px;
+        text-align: center;
+        font-size: 45px;
+    }
+    .top-p{
+        text-align: center;
+        font-size: 25px;
+    }
+    .carousel-item img{
+        height: 800px;
+    }

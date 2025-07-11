@@ -1,0 +1,303 @@
+/*
+Theme Name: Twenty Twenty
+Text Domain: twentytwenty
+Version: 1.6
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, accessibility-ready
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Theme URI: https://wordpress.org/themes/twentytwenty/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Document Setup
+	2. 	Element Base
+	3. 	Helper Classes
+	4. 	Site Header
+	5. 	Menu Modal
+	6. 	Search Modal
+	7. 	Page Templates
+		a. 	Template: Cover Template
+		c. 	Template: Full Width
+	8.  Post: Archive
+	9.  Post: Single
+	10. Blocks
+	11. Entry Content
+	12. Comments
+	13. Site Pagination
+	14. Error 404
+	15. Widgets
+	16. Site Footer
+	17. Media Queries
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+.footer-cta.pt-5.pb-5 {
+   padding-top: 40px;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+}
+
+
+.text-decoration-none{
+ text-decoration: none!important;
+}
+img.img-fluid.logo {
+   width: 35%;
+}
+button.ff-btn.ff-btn-submit.ff-btn-md.ff_btn_style {
+   background: #004AAD;
+   color: white;
+   width: 100%;
+   font-size: 18px;
+}
+div#section-subheader1 {
+   margin-top: 50px;
+}
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width { width: 2rem;}
+
+/*  footer css */
+.footer-section {
+   background: #151414;
+   position: relative;
+ }
+ .img-fluid.web_img {
+   margin-top: 20px;
+   border-radius: 20px;
+}
+.web_content {
+   text-align: justify;
+}
+ .footer-cta {
+   border-bottom: 1px solid #373636;
+ }
+ .single-cta i {
+   color: #004AAD;
+   font-size: 30px;
+   float: left;
+   margin-top: 8px;
+ }
+ .cta-text {
+   padding-left: 15px;
+   display: inline-block;
+ }
+ h3.title {
+   margin-top: 30px;
+   text-align: center;
+   text-transform: uppercase;
+   background: #004AAD;
+   color: white;
+   padding: 30px 0px 30px 0px;
+}
+ .cta-text h4 {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 2px;
+ }
+ .cta-text span {
+   color: #757575;
+   font-size: 15px;
+ }
+ .footer-content {
+   position: relative;
+   z-index: 2;
+ }
+ .footer-pattern img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 330px;
+   background-size: cover;
+   background-position: 100% 100%;
+ }
+ .footer-logo {
+   margin-bottom: 30px;
+ }
+ .footer-logo img {
+     max-width: 200px;
+ }
+ .footer-text p {
+   margin-bottom: 14px;
+   font-size: 14px;
+       color: #7e7e7e;
+   line-height: 28px;
+ }
+ .footer-social-icon span {
+   color: #fff;
+   display: block;
+   font-size: 20px;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+   margin-bottom: 20px;
+ }
+ .footer-social-icon a {
+   color: #fff;
+   font-size: 16px;
+   margin-right: 15px;
+ }
+ .footer-social-icon i {
+   height: 40px;
+   width: 40px;
+   text-align: center;
+   line-height: 38px;
+   border-radius: 50%;
+ }
+ .facebook-bg{
+   background: #3B5998;
+ }
+ .twitter-bg{
+   background: #55ACEE;
+ }
+ .google-bg{
+   background: #DD4B39;
+ }
+ .footer-widget-heading h3 {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 40px;
+   position: relative;
+ }
+ .footer-widget-heading h3::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -15px;
+   height: 2px;
+   width: 50px;
+   background: #004AAD;
+ }
+ .footer-widget ul li {
+   display: inline-block;
+   float: left;
+   width: 50%;
+   margin-bottom: 12px;
+ }
+ .footer-widget ul li a:hover{
+   color: #004AAD;
+ }
+ .footer-widget ul li a {
+   color: #878787;
+   text-transform: capitalize;
+ }
+ .subscribe-form {
+   position: relative;
+   overflow: hidden;
+ }
+ .subscribe-form input {
+   width: 100%;
+   padding: 14px 28px;
+   background: #2E2E2E;
+   border: 1px solid #2E2E2E;
+   color: #fff;
+ }
+ .subscribe-form button {
+     position: absolute;
+     right: 0;
+     background: #004AAD;
+     padding: 13px 20px;
+     border: 1px solid #004AAD;
+     top: 0;
+ }
+ .subscribe-form button i {
+   color: #fff;
+   font-size: 22px;
+   transform: rotate(-6deg);
+ }
+ .copyright-area{
+   background: #202020;
+   padding: 25px 0;
+ }
+ .copyright-text p {
+   margin: 0;
+   font-size: 14px;
+   color: #878787;
+ }
+ .copyright-text p a{
+   color: #004AAD;
+ }
+ .footer-menu li {
+   display: inline-block;
+   margin-left: 20px;
+ }
+ .footer-menu li:hover a{
+   color: #004AAD;
+ }
+ .footer-menu li a {
+   font-size: 14px;
+   color: #878787;
+ }
+ h2.title {
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #004AAD;
+}
+p.content {
+   text-align: justify;
+   margin-top: 20px;
+}
+.car {
+   background: #cdcdcd85;
+   padding: 20px;
+   border-radius: 10px;
+   margin-top: 40px;
+
+}
+.car-title
+{
+text-align: center;
+margin-top: 10px;
+text-transform: uppercase;
+font-weight: 600;
+color: #004AAD;
+}
+h6.car-price {
+   text-align: center;
+   font-size: 20px;
+   margin-top: 20px;
+}
+h2.web_title {
+   text-align: center;
+   text-transform: uppercase;
+   magin-top: 20px;
+   margin-bottom: 20px;
+   color: #004AAD;
+   font-weight: 700;
+}
+.center{
+   text-align: center;
+}
+button.car-btn {
+   background: #004AAD;
+   color: white;
+   border: 0px;
+   margin: auto;
+   display: block;
+   margin-top: 30px;
+   padding: 10px 30px 10px 30px;
+   font-size: 18px;
+   font-weight: 700;
+}
