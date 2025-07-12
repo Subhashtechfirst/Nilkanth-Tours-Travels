@@ -1,57 +1,122 @@
-      *{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    
-    body{
-        background-color: rgb(231 232 233 / 98%);
-        color: rgb(5, 5, 39);     
-    }
-    .container{
-        width:70%;
-        margin: 0rem auto;
-        color: rgb(5, 5, 39); 
+      * {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+      }
+      .bb{
+        border-bottom: 5px solid gray;
+      }
 
-    }
-  
-    /* nav bar CSS start */
-    .bg-color{
-        background-color: #ed8800!important;
-        box-shadow: 10px 10px 30px black;
-    }
-    .nav-section-top{
-        display: flex;
-        background-color:#ed8800;
-        justify-content: space-between;
-    }
+      body {
+          background-color: rgb(231 232 233 / 98%);
+          color: rgb(5, 5, 39);
+      }
 
-    .nav-child-s ul li{
-        
-        display: inline;
-        font-size: 25px;
-        justify-content:center;
-        margin: 16px;
-    }
-    .nav-ul{
-        margin-left: 20rem;
-        margin-top: 4rem;
-    }
-    /* nav bar CSS end */
-    marquee{
-        font-size: 35px;
-        background-color: #e18305;
-    }
-    .top-h1{
-        color: #e18305;
-        margin-top: 55px;
-        text-align: center;
-        font-size: 45px;
-    }
-    .top-p{
-        text-align: center;
-        font-size: 25px;
-    }
-    .carousel-item img{
-        height: 800px;
-    }
+      .container {
+          width: 70%;
+          margin: 0rem auto;
+          color: rgb(5, 5, 39);
+
+      }
+
+      /* nav bar CSS start */
+      .bg-color {
+          background-color: #ed8800 !important;
+          box-shadow: 10px 10px 30px black;
+      }
+
+      .nav-section-top {
+          display: flex;
+          background-color: #ed8800;
+          justify-content: space-between;
+      }
+
+      .nav-child-f img {
+          width: 150px;
+      }
+
+      .nav-child-s ul li {
+
+          display: inline;
+          font-size: 25px;
+          justify-content: center;
+          margin: 16px;
+      }
+
+      .nav-ul {
+          /* margin-left: 20rem; */
+          margin-top: 1rem;
+      }
+
+      /* nav bar CSS end */
+      marquee {
+          font-size: 35px;
+          background-color: #e18305;
+      }
+
+      .top-h1 {
+          color: #e18305;
+          margin-top: 55px;
+          text-align: center;
+          font-size: 45px;
+      }
+
+      .top-p {
+          text-align: center;
+          font-size: 25px;
+      }
+
+      .carousel-item img {
+          height: 800px;
+      }
+
+      .form-main-parent {
+          display: flex;
+      }
+
+      .form-child-f {
+          margin-top: 10px;
+          flex: 1;
+          align-content: center;
+          padding: 20px;
+          margin: 20px;
+      }
+
+      .form-child-s {
+          flex: 1;
+          padding: 20px;
+          margin: 20px;
+      }
+
+      input {
+          
+          width: 100%;
+          margin: 20px;
+          padding: 20PX;
+      }
+
+      textarea {
+          padding: 20px;
+          height: 146px;
+          width: 100%;
+      }
+
+      select {
+         
+          width: 100%;
+          margin: 20px;
+          padding: 20PX;
+      }
+
+      button {
+          padding: 10px 35px;
+          margin: 35px;
+          background-color: blue;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+
+      }
+      .spece{
+        margin-bottom: 10px;
+      }
